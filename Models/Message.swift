@@ -1,10 +1,17 @@
 import Foundation
 
+enum MessageDisplayStyle {
+    case standard
+    case systemDivider
+    case humanSupport
+}
+
 /// Representa un mensaje en el chat (del usuario o del bot)
 struct Message: Identifiable {
     let id = UUID()
     let text: String
     let isUser: Bool
+    let displayStyle: MessageDisplayStyle
     let confidence: Float?
     let shouldEscalate: Bool
     let source: String?
@@ -15,6 +22,7 @@ struct Message: Identifiable {
     init(
         text: String,
         isUser: Bool,
+        displayStyle: MessageDisplayStyle = .standard,
         confidence: Float? = nil,
         shouldEscalate: Bool = false,
         source: String? = nil,
@@ -24,6 +32,7 @@ struct Message: Identifiable {
     ) {
         self.text = text
         self.isUser = isUser
+        self.displayStyle = displayStyle
         self.confidence = confidence
         self.shouldEscalate = shouldEscalate
         self.source = source

@@ -7,7 +7,6 @@ import SwiftUI
 
 struct NPSView: View {
     @State private var rating: Double = 3
-    @State private var showThankYouAlert = false
 
     // Scales emoji and number sizes proportionally with Dynamic Type
     @ScaledMetric(relativeTo: .largeTitle) private var emojiSize: CGFloat = 80
@@ -95,7 +94,7 @@ struct NPSView: View {
                 .cornerRadius(24)
 
                 Button {
-                    showThankYouAlert = true
+                    print("Calificación enviada: \(Int(rating))")
                 } label: {
                     Text("Enviar calificación")
                         .font(.title3)
@@ -111,11 +110,6 @@ struct NPSView: View {
             .padding(24)
             // Centers content and fills the full TabView canvas
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-        }
-        .alert("Gracias por tu retroalimentacion", isPresented: $showThankYouAlert) {
-            Button("Cerrar", role: .cancel) {}
-        } message: {
-            Text("Muchas gracias por usar la herramienta. Tu retroalimentacion es muy importante para nosotros y seguiremos trabajando para brindarte un mejor servicio.")
         }
     }
 }

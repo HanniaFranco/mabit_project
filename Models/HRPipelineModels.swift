@@ -27,30 +27,10 @@ struct EvidenceGrade: Codable, Sendable {
 struct EmployeeRecord: Codable, Sendable {
     let employeeId: String
     let name: String
-    let email: String?
     let country: String
     let area: String
-    let department: String?
-    let jobTitle: String?
     let seniorityYears: Int
-    let hireDate: String?
-    let employmentStatus: String?
     let vacationDaysAvailable: Int
     let payrollStatus: String
     let nextPaymentDate: String
-}
-
-struct PipelineTrace: Codable, Sendable {
-    let classification: TraceStep
-    let evidenceGrade: TraceStep
-    let finalAnswer: TraceStep
-}
-
-struct TraceStep: Codable, Sendable {
-    let stage: String
-    let usedFoundationModel: Bool
-    let usedFallback: Bool
-    let summary: String
-    let rawOutput: String?
-    let errorDescription: String?
 }

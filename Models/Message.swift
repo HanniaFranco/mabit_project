@@ -11,8 +11,6 @@ struct Message: Identifiable {
     let intent: HRIntent?
     let authLevel: AuthLevel?
     let reason: String?
-    let answerSource: AnswerSource?
-    let trace: PipelineTrace?
 
     init(
         text: String,
@@ -22,9 +20,7 @@ struct Message: Identifiable {
         source: String? = nil,
         intent: HRIntent? = nil,
         authLevel: AuthLevel? = nil,
-        reason: String? = nil,
-        answerSource: AnswerSource? = nil,
-        trace: PipelineTrace? = nil
+        reason: String? = nil
     ) {
         self.text = text
         self.isUser = isUser
@@ -34,7 +30,5 @@ struct Message: Identifiable {
         self.intent = intent
         self.authLevel = authLevel
         self.reason = reason
-        self.answerSource = answerSource
-        self.trace = trace
     }
 }

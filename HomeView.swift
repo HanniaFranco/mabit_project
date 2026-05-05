@@ -70,7 +70,7 @@ struct HomeView: View {
                 ChatView()
             } label: {
                 HStack(spacing: 10) {
-                    Image(systemName: "message.fill")
+                    Image(systemName: "sparkles.message.fill")
                         .font(.headline)
                     Text("Hazme una pregunta!")
                         .font(.custom("Gilroy-Bold", size: 18))

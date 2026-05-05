@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB4B75352FAA8B1100239374 /* mabito.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB4B75342FAA8B1100239374 /* mabito.mp4 */; };
 		FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB3E2FA9CDB50090BA2C /* SplashView.swift */; };
 		FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */; };
 		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
 		FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB572FAA10E80090BA2C /* HomeView.swift */; };
 		FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */; };
-
-		FBC9A9752FAA6F4300D1523E /* api_response.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A9742FAA6F4300D1523E /* api_response.json */; };
-
-		FBEBA7732FAA654B009407C9 /* NPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76F2FAA654B009407C9 /* NPSView.swift */; };
-		FBEBA7742FAA654B009407C9 /* WordCloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA7712FAA654B009407C9 /* WordCloudView.swift */; };
-		FBEBA7752FAA654B009407C9 /* EfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */; };
-		FBEBA7762FAA654B009407C9 /* SatisfactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */; };
-		FBEBA7772FAA654B009407C9 /* BottlenecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */; };
-		FBEBA7782FAA654B009407C9 /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76D2FAA654B009407C9 /* CheckInView.swift */; };
-
+		FBCA68E32FAA610C00EBE35E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCA68E22FAA610C00EBE35E /* WidgetKit.framework */; };
+		FBCA68E52FAA610C00EBE35E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCA68E42FAA610C00EBE35E /* SwiftUI.framework */; };
+		FBCA68F62FAA610E00EBE35E /* MabitWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FBCA68E02FAA610C00EBE35E /* MabitWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBCA68FD2FAA653700EBE35E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA68FC2FAA653700EBE35E /* AppColors.swift */; };
+		FBCA68FE2FAA653700EBE35E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA68FC2FAA653700EBE35E /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +35,31 @@
 			remoteGlobalIDString = FB8EBB112FA9CCF40090BA2C;
 			remoteInfo = mabit_project;
 		};
+		FBCA68F42FAA610E00EBE35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB8EBB0A2FA9CCF40090BA2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCA68DF2FAA610C00EBE35E;
+			remoteInfo = MabitWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FBCA68F72FAA610E00EBE35E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBCA68F62FAA610E00EBE35E /* MabitWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FB4B75342FAA8B1100239374 /* mabito.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mabito.mp4; sourceTree = "<group>"; };
 		FB8EBB122FA9CCF40090BA2C /* mabit_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mabit_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,17 +68,21 @@
 		FB8EBB422FAA032C0090BA2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FB8EBB572FAA10E80090BA2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = politicas_generales.pdf; sourceTree = "<group>"; };
-
-		FBC9A9742FAA6F4300D1523E /* api_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = api_response.json; sourceTree = "<group>"; };
-
-		FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlenecksView.swift; sourceTree = "<group>"; };
-		FBEBA76D2FAA654B009407C9 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
-		FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EfficiencyView.swift; sourceTree = "<group>"; };
-		FBEBA76F2FAA654B009407C9 /* NPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSView.swift; sourceTree = "<group>"; };
-		FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfactionView.swift; sourceTree = "<group>"; };
-		FBEBA7712FAA654B009407C9 /* WordCloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudView.swift; sourceTree = "<group>"; };
-
+		FBCA68E02FAA610C00EBE35E /* MabitWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MabitWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCA68E22FAA610C00EBE35E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FBCA68E42FAA610C00EBE35E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FBCA68FC2FAA653700EBE35E /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB8EBB142FA9CCF40090BA2C /* mabit_project */ = {
@@ -93,6 +115,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FBCA68E62FAA610C00EBE35E /* MabitWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */,
+			);
+			path = MabitWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +147,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBCA68DD2FAA610C00EBE35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCA68E52FAA610C00EBE35E /* SwiftUI.framework in Frameworks */,
+				FBCA68E32FAA610C00EBE35E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FB8EBB092FA9CCF40090BA2C = {
 			isa = PBXGroup;
 			children = (
-				FBC9A9742FAA6F4300D1523E /* api_response.json */,
+				FBCA68FC2FAA653700EBE35E /* AppColors.swift */,
 				FB8EBB442FAA08E00090BA2C /* Fonts */,
 				FB8EBB572FAA10E80090BA2C /* HomeView.swift */,
 				FB8EBB422FAA032C0090BA2C /* LoginView.swift */,
@@ -132,11 +171,13 @@
 				FB8EBB142FA9CCF40090BA2C /* mabit_project */,
 				FB8EBB242FA9CCF60090BA2C /* mabit_projectTests */,
 				FB8EBB2E2FA9CCF60090BA2C /* mabit_projectUITests */,
+				FBCA68E62FAA610C00EBE35E /* MabitWidget */,
+				FBCA68E12FAA610C00EBE35E /* Frameworks */,
 				FB8EBB132FA9CCF40090BA2C /* Products */,
 				FBC9A95E2FAA503F00D1523E /* Core */,
 				FBC9A9682FAA504900D1523E /* Models */,
 				FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */,
-				FBEBA7722FAA654B009407C9 /* vistas_BI */,
+				FB4B75342FAA8B1100239374 /* mabito.mp4 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,21 +187,18 @@
 				FB8EBB122FA9CCF40090BA2C /* mabit_project.app */,
 				FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */,
 				FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */,
+				FBCA68E02FAA610C00EBE35E /* MabitWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBEBA7722FAA654B009407C9 /* vistas_BI */ = {
+		FBCA68E12FAA610C00EBE35E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */,
-				FBEBA76D2FAA654B009407C9 /* CheckInView.swift */,
-				FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */,
-				FBEBA76F2FAA654B009407C9 /* NPSView.swift */,
-				FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */,
-				FBEBA7712FAA654B009407C9 /* WordCloudView.swift */,
+				FBCA68E22FAA610C00EBE35E /* WidgetKit.framework */,
+				FBCA68E42FAA610C00EBE35E /* SwiftUI.framework */,
 			);
-			path = vistas_BI;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +211,12 @@
 				FB8EBB0E2FA9CCF40090BA2C /* Sources */,
 				FB8EBB0F2FA9CCF40090BA2C /* Frameworks */,
 				FB8EBB102FA9CCF40090BA2C /* Resources */,
+				FBCA68F72FAA610E00EBE35E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FBCA68F52FAA610E00EBE35E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FB8EBB142FA9CCF40090BA2C /* mabit_project */,
@@ -237,6 +277,28 @@
 			productReference = FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCA68FB2FAA610E00EBE35E /* Build configuration list for PBXNativeTarget "MabitWidgetExtension" */;
+			buildPhases = (
+				FBCA68DC2FAA610C00EBE35E /* Sources */,
+				FBCA68DD2FAA610C00EBE35E /* Frameworks */,
+				FBCA68DE2FAA610C00EBE35E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FBCA68E62FAA610C00EBE35E /* MabitWidget */,
+			);
+			name = MabitWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MabitWidgetExtension;
+			productReference = FBCA68E02FAA610C00EBE35E /* MabitWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +320,9 @@
 						CreatedOnToolsVersion = 26.4.1;
 						TestTargetID = FB8EBB112FA9CCF40090BA2C;
 					};
+					FBCA68DF2FAA610C00EBE35E = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
 				};
 			};
 			buildConfigurationList = FB8EBB0D2FA9CCF40090BA2C /* Build configuration list for PBXProject "mabit_project" */;
@@ -277,6 +342,7 @@
 				FB8EBB112FA9CCF40090BA2C /* mabit_project */,
 				FB8EBB202FA9CCF60090BA2C /* mabit_projectTests */,
 				FB8EBB2A2FA9CCF60090BA2C /* mabit_projectUITests */,
+				FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -286,8 +352,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4B75352FAA8B1100239374 /* mabito.mp4 in Resources */,
 				FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */,
-				FBC9A9752FAA6F4300D1523E /* api_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +371,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBCA68DE2FAA610C00EBE35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,12 +387,7 @@
 			files = (
 				FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */,
 				FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */,
-				FBEBA7732FAA654B009407C9 /* NPSView.swift in Sources */,
-				FBEBA7742FAA654B009407C9 /* WordCloudView.swift in Sources */,
-				FBEBA7752FAA654B009407C9 /* EfficiencyView.swift in Sources */,
-				FBEBA7762FAA654B009407C9 /* SatisfactionView.swift in Sources */,
-				FBEBA7772FAA654B009407C9 /* BottlenecksView.swift in Sources */,
-				FBEBA7782FAA654B009407C9 /* CheckInView.swift in Sources */,
+				FBCA68FD2FAA653700EBE35E /* AppColors.swift in Sources */,
 				FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */,
 				FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */,
 			);
@@ -339,6 +407,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBCA68DC2FAA610C00EBE35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCA68FE2FAA653700EBE35E /* AppColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -351,6 +427,11 @@
 			isa = PBXTargetDependency;
 			target = FB8EBB112FA9CCF40090BA2C /* mabit_project */;
 			targetProxy = FB8EBB2C2FA9CCF60090BA2C /* PBXContainerItemProxy */;
+		};
+		FBCA68F52FAA610E00EBE35E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */;
+			targetProxy = FBCA68F42FAA610E00EBE35E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -481,10 +562,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mabit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -495,7 +577,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -514,10 +596,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mabit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -528,7 +611,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -546,6 +629,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
@@ -567,6 +651,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
@@ -587,6 +672,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
@@ -606,6 +692,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
@@ -617,6 +704,66 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = mabit_project;
+			};
+			name = Release;
+		};
+		FBCA68F82FAA610E00EBE35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MabitWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MabitWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project1.MabitWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBCA68F92FAA610E00EBE35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MabitWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MabitWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project1.MabitWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -655,6 +802,15 @@
 			buildConfigurations = (
 				FB8EBB3C2FA9CCF60090BA2C /* Debug */,
 				FB8EBB3D2FA9CCF60090BA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCA68FB2FAA610E00EBE35E /* Build configuration list for PBXNativeTarget "MabitWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCA68F82FAA610E00EBE35E /* Debug */,
+				FBCA68F92FAA610E00EBE35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

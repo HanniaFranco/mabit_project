@@ -12,6 +12,7 @@
 		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
 		FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB572FAA10E80090BA2C /* HomeView.swift */; };
 		FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */; };
+		FBC9A9752FAA6F4300D1523E /* api_response.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A9742FAA6F4300D1523E /* api_response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		FB8EBB422FAA032C0090BA2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FB8EBB572FAA10E80090BA2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = politicas_generales.pdf; sourceTree = "<group>"; };
+		FBC9A9742FAA6F4300D1523E /* api_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = api_response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -103,6 +105,7 @@
 		FB8EBB092FA9CCF40090BA2C = {
 			isa = PBXGroup;
 			children = (
+				FBC9A9742FAA6F4300D1523E /* api_response.json */,
 				FB8EBB442FAA08E00090BA2C /* Fonts */,
 				FB8EBB572FAA10E80090BA2C /* HomeView.swift */,
 				FB8EBB422FAA032C0090BA2C /* LoginView.swift */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */,
+				FBC9A9752FAA6F4300D1523E /* api_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H878Y3WH2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";
@@ -471,6 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H878Y3WH2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";

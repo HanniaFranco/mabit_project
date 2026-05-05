@@ -87,9 +87,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FB549E1A2FAAB5630023D538 /* Exceptions for "MabitWidget" folder in "mabit_project" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				api_response.json,
+			);
+			target = FB8EBB112FA9CCF40090BA2C /* mabit_project */;
+		};
 		FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				api_response.json,
 				Info.plist,
 			);
 			target = FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */;
@@ -130,6 +138,7 @@
 		FBCA68E62FAA610C00EBE35E /* MabitWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				FB549E1A2FAAB5630023D538 /* Exceptions for "MabitWidget" folder in "mabit_project" target */,
 				FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */,
 			);
 			path = MabitWidget;

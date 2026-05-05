@@ -22,8 +22,8 @@ class User {
 struct LoginView: View {
     let onLoginSuccess: () -> Void
     
-    @State private var email = ""
-    @State private var password = ""
+    @State private var email = "mabito@mabe.com"
+    @State private var password = "admin123"
     @State private var showPassword = false
     
     @State private var goToRegister = false

@@ -6,14 +6,16 @@
 import SwiftUI
 
 struct NPSView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var rating: Double = 3
     @State private var showThankYouAlert = false
+    @State private var shouldGoToHome = false
 
-    // Scales emoji and number sizes proportionally with Dynamic Type
+    // Ajusta el tamaño según el Dynamic Type.
     @ScaledMetric(relativeTo: .largeTitle) private var emojiSize: CGFloat = 80
     @ScaledMetric(relativeTo: .largeTitle) private var numberSize: CGFloat = 56
 
-    // Mapea cada valor del slider a un emoji expresivo
+    // Mapea el valor a un emoji.
     private func emoji(for value: Int) -> String {
         switch value {
         case 0:  return "😡"
@@ -25,7 +27,7 @@ struct NPSView: View {
         }
     }
 
-    // Descripción textual del emoji para VoiceOver
+    // Descripción para VoiceOver.
     private func emojiDescription(for value: Int) -> String {
         switch value {
         case 0:  return "Muy insatisfecho"
@@ -38,9 +40,10 @@ struct NPSView: View {
     }
 
     var body: some View {
-        // ScrollView prevents content overflow at large Dynamic Type sizes
+        // Evita el desbordamiento de contenido.
         ScrollView {
             VStack(spacing: 48) {
+                
                 VStack(spacing: 8) {
                     Text("Califica tu experiencia")
                         .font(.largeTitle)
@@ -51,10 +54,10 @@ struct NPSView: View {
                         .multilineTextAlignment(.center)
                 }
 
-                // Tarjeta del slider con material nativo
+                // Tarjeta principal.
                 VStack(spacing: 32) {
                     VStack(spacing: 8) {
-                        // ZStack + .id() forces SwiftUI to swap the view and fire the transition
+                        // Fuerza la transición del emoji.
                         ZStack {
                             Text(emoji(for: Int(rating)))
                                 .font(.system(size: emojiSize))
@@ -71,7 +74,7 @@ struct NPSView: View {
                             .animation(.spring(), value: rating)
                             .accessibilityHidden(true)
                     }
-                    // Groups emoji + number so VoiceOver reads them as one element
+                    // Agrupa elementos para VoiceOver.
                     .accessibilityElement(children: .combine)
 
                     Slider(value: $rating, in: 0...5, step: 1)
@@ -87,7 +90,7 @@ struct NPSView: View {
                     }
                     .font(.caption)
                     .foregroundColor(.secondary)
-                    // Decorative labels — the slider's accessibilityValue provides this context
+                    // Oculto por redundancia con el Slider.
                     .accessibilityHidden(true)
                 }
                 .padding(32)
@@ -109,11 +112,18 @@ struct NPSView: View {
                 .accessibilityHint("Envía tu calificación de \(Int(rating)) de 5")
             }
             .padding(24)
-            // Centers content and fills the full TabView canvas
+            // Centra el contenido en la pantalla.
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
+        // Define el destino de la navegación al cambiar el estado.
+        .navigationDestination(isPresented: $shouldGoToHome) {
+            HomeView(goToChat: .constant(false))
+        }
         .alert("Gracias por tu retroalimentacion", isPresented: $showThankYouAlert) {
-            Button("Cerrar", role: .cancel) {}
+            Button("Cerrar", role: .cancel) {
+                // Activa la navegación al cerrar la alerta.
+                shouldGoToHome = true
+            }
         } message: {
             Text("Muchas gracias por usar la herramienta. Tu retroalimentacion es muy importante para nosotros y seguiremos trabajando para brindarte un mejor servicio.")
         }

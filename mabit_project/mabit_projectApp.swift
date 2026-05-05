@@ -26,9 +26,8 @@ struct mabit_projectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SplashView()   
+            ContentView()
         }
         .modelContainer(sharedModelContainer)
     }
 }
-

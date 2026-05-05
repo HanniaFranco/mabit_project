@@ -11,6 +11,7 @@
 		FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */; };
 		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
 		FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB572FAA10E80090BA2C /* HomeView.swift */; };
+		FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		FB8EBB422FAA032C0090BA2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FB8EBB572FAA10E80090BA2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = politicas_generales.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -59,6 +61,16 @@
 		FB8EBB442FAA08E00090BA2C /* Fonts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FBC9A95E2FAA503F00D1523E /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FBC9A9682FAA504900D1523E /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -100,6 +112,9 @@
 				FB8EBB242FA9CCF60090BA2C /* mabit_projectTests */,
 				FB8EBB2E2FA9CCF60090BA2C /* mabit_projectUITests */,
 				FB8EBB132FA9CCF40090BA2C /* Products */,
+				FBC9A95E2FAA503F00D1523E /* Core */,
+				FBC9A9682FAA504900D1523E /* Models */,
+				FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +146,8 @@
 			fileSystemSynchronizedGroups = (
 				FB8EBB142FA9CCF40090BA2C /* mabit_project */,
 				FB8EBB442FAA08E00090BA2C /* Fonts */,
+				FBC9A95E2FAA503F00D1523E /* Core */,
+				FBC9A9682FAA504900D1523E /* Models */,
 			);
 			name = mabit_project;
 			packageProductDependencies = (
@@ -234,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

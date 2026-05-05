@@ -7,39 +7,11 @@
 
 import SwiftUI
 
-struct MainTabView: View {
-    @State private var selectedTab = 0
-    
-    var body: some View {
-        TabView(selection: $selectedTab) {
-            
-            // HOME
-            HomeView()
-                .tag(0)
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Inicio")
-                }
-            
-            // USUARIO
-            LoginView()
-                .tag(1)
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Usuario")
-                }
-        }
-        .accentColor(.mabeBlue)
-        .font(.custom("Gilroy-Medium", size: 12))
-    }
-}
-
 struct HomeView: View {
     var body: some View {
-        NavigationView {
+        ZStack(alignment: .bottom) {
             ScrollView {
                 VStack(spacing: 30) {
-                    
                     AnimatedImageCard(imageName: "cultura",
                                       title: "Cultura Mabe",
                                       description: "Innovación, trabajo en equipo y crecimiento personal.")
@@ -72,15 +44,38 @@ struct HomeView: View {
                                       description: "Líderes en innovación, estabilidad laboral y crecimiento.")
                 }
                 .padding(.vertical, 10)
+                .padding(.bottom, 110)
             }
+            .navigationTitle("Inicio")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Inicio")
-                        .font(.headline)
-                        .foregroundColor(.mabeBlue)
-                        .multilineTextAlignment(.center)
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                    } label: {
+                        Image(systemName: "person.crop.circle")
+                            .font(.title3)
+                            .foregroundStyle(Color.mabeBlue)
+                    }
                 }
             }
+
+            NavigationLink {
+                ChatView()
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "sparkles.message.fill")
+                        .font(.headline)
+                    Text("Hazme una pregunta!")
+                        .font(.custom("Gilroy-Bold", size: 18))
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 16)
+                .background(Color.mabeBlue)
+                .clipShape(Capsule())
+                .shadow(color: Color.mabeBlue.opacity(0.28), radius: 14, x: 0, y: 10)
+            }
+            .padding(.bottom, 24)
         }
     }
 }
@@ -176,5 +171,7 @@ struct FakeVideoCard: View {
 }
 
 #Preview {
-    MainTabView()
+    NavigationStack {
+        HomeView()
+    }
 }

@@ -7,11 +7,11 @@
 import SwiftUI
 
 struct SplashView: View {
+    let onFinished: () -> Void
     
     // Estas variables controlan animaciones
     @State private var showLogo = false
     @State private var showText = false
-    @State private var goToLogin = false
     
     var body: some View {
         
@@ -41,11 +41,6 @@ struct SplashView: View {
         .onAppear {
             startAnimation()
         }
-        
-        // Navegación automática
-        .fullScreenCover(isPresented: $goToLogin) {
-            WelcomeView()
-        }
     }
     
     // Función que controla todo
@@ -65,12 +60,11 @@ struct SplashView: View {
         
         // 3. Ir a login
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) {
-            goToLogin = true
+            onFinished()
         }
     }
 }
 
 #Preview {
-    SplashView()
+    SplashView { }
 }
-

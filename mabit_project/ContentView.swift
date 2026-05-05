@@ -14,13 +14,41 @@ extension Color {
 }
 
 struct ContentView: View {
+    @State private var route: AppRoute = .splash
+
     var body: some View {
-        SplashView()
+        NavigationStack {
+            Group {
+                switch route {
+                case .splash:
+                    SplashView {
+                        route = .welcome
+                    }
+                case .welcome:
+                    WelcomeView {
+                        route = .login
+                    }
+                case .login:
+                    LoginView {
+                        route = .home
+                    }
+                case .home:
+                    HomeView()
+                }
+            }
+        }
     }
 }
 
 #Preview {
     ContentView()
+}
+
+private enum AppRoute {
+    case splash
+    case welcome
+    case login
+    case home
 }
 
 /*
@@ -77,5 +105,3 @@ struct ContentView: View {
 }
 
 */
-
-

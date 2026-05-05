@@ -20,25 +20,14 @@ class User {
 }
 
 struct LoginView: View {
-    
-    @Environment(\.modelContext) private var context
-    @Query private var users: [User]
+    let onLoginSuccess: () -> Void
     
     @State private var email = ""
     @State private var password = ""
     @State private var showPassword = false
     
-    @State private var goToHome = false
-    @State private var showError = false
-    @State private var errorMessage = ""
-    
     @State private var goToRegister = false
     @State private var goToForgot = false
-    
-    @State private var showAlert = false
-    @State private var message = ""
-    
-    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -50,16 +39,6 @@ struct LoginView: View {
                 
                 // BOTÓN BACK
                 HStack {
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(systemName: "arrow.left")
-                            .foregroundColor(Color.mabeBlue)
-                            .padding()
-                            .overlay(
-                                Circle().stroke(Color.mabeBlue, lineWidth: 1)
-                            )
-                    }
                     Spacer()
                 }
                 .padding(.horizontal)
@@ -161,25 +140,6 @@ struct LoginView: View {
                 .padding(.bottom, -30)
             }
         }
-        // ALERT DE ERROR
-        .alert("Error", isPresented: $showError) {
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text(errorMessage)
-        }
-        // ALERT DE LISTO
-        .alert("Listo", isPresented: $showAlert) {
-            Button("Continuar") {
-                goToHome = true   // Se dispara la navegación
-            }
-        } message: {
-            Text(message)
-        }
-
-        // FULL SCREEN COVERS
-        .fullScreenCover(isPresented: $goToHome) {
-            //HomeView()
-        }
         .fullScreenCover(isPresented: $goToRegister) {
             //RegisterView()
         }
@@ -189,42 +149,46 @@ struct LoginView: View {
     }
     
     func login() {
+        onLoginSuccess()
+
+        /*
         // VALIDACIONES LOCALES
         if email.isEmpty || password.isEmpty {
             errorMessage = "Por favor completa todos los campos"
             showError = true
             return
         }
-        
+
         if !email.contains("@") {
             errorMessage = "Ingresa un correo válido"
             showError = true
             return
         }
-        
+
         if password.count < 6 {
             errorMessage = "La contraseña debe tener al menos 6 caracteres"
             showError = true
             return
         }
-        
+
         // VALIDAR CONTRA SWIFTDATA
         if let user = users.first(where: { $0.email == email }) {
             if user.password == password {
-                message = "Sesión iniciada correctamente"
+                message = "Sesion iniciada correctamente"
                 showAlert = true
             } else {
-                errorMessage = "La contraseña que ingresaste es incorrecta"
+                errorMessage = "La contrasena que ingresaste es incorrecta"
                 showError = true
             }
         } else {
             errorMessage = "No existe ninguna cuenta registrada con este correo"
             showError = true
         }
+        */
     }
 
 }
 
 #Preview {
-    LoginView()
+    LoginView { }
 }

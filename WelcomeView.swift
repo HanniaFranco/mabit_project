@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    let onContinue: () -> Void
     
     @State private var showContent = false
-    @State private var goToHome = false
     
     var body: some View {
         ZStack {
@@ -74,7 +74,7 @@ struct WelcomeView: View {
                 
                 // BOTÓN
                 Button(action: {
-                    goToHome = true
+                    onContinue()
                 }) {
                     Text("Siguiente")
                         .font(.custom("Gilroy-Medium", size: 18))
@@ -97,9 +97,6 @@ struct WelcomeView: View {
         .onAppear {
             startAnimation()
         }
-        .fullScreenCover(isPresented: $goToHome) {
-            HomeView()
-        }
     }
     
     func startAnimation() {
@@ -110,5 +107,5 @@ struct WelcomeView: View {
 }
 
 #Preview {
-    WelcomeView()
+    WelcomeView { }
 }

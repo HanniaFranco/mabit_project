@@ -30,4 +30,12 @@ struct ChatResponse: Sendable {
     let intent: HRIntent?
     let authLevel: AuthLevel?
     let reason: String?
+    let answerSource: AnswerSource
+    let requiresBiometricVerification: Bool
+    let trace: PipelineTrace?
+}
+
+enum AnswerSource: String, Codable, Sendable {
+    case foundationModel = "Foundation Model"
+    case fallback = "Fallback hardcodeado"
 }

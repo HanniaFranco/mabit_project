@@ -6,9 +6,11 @@ enum HRIntent: String, Codable, Sendable {
     case benefitsPolicy
     case payrollPolicy
     case payrollPersonal
+    case employeeProfile
     case schedulePolicy
     case trainingPolicy
     case conductPolicy
     case hrContact
+    case smallTalk
     case unknown
 }

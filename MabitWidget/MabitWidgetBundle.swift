@@ -12,7 +12,7 @@ import SwiftUI
 struct MabitWidgetBundle: WidgetBundle {
     var body: some Widget {
         MabitWidget()
-        MabitWidgetControl()
-        MabitWidgetLiveActivity()
+        //MabitWidgetControl()
+        //MabitWidgetLiveActivity()
     }
 }

@@ -9,12 +9,17 @@
 import SwiftUI
 import SwiftData
 
+/*
 extension Color {
     static let mabeBlue = Color(red: 36/255, green: 152/255, blue: 187/255)
 }
+ */
 
 struct ContentView: View {
+    
     @State private var route: AppRoute = .splash
+    @State private var goToChat: Bool = false
+    
 
     var body: some View {
         NavigationStack {
@@ -33,10 +38,20 @@ struct ContentView: View {
                         route = .home
                     }
                 case .home:
-                    HomeView()
+                    HomeView(goToChat: $goToChat)
+                }
+            }
+            
+            .onOpenURL { url in
+                if url.absoluteString == "mabit://chat" {
+                    route = .home
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        goToChat = true
+                    }
                 }
             }
         }
+        
     }
 }
 

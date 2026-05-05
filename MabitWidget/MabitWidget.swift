@@ -45,16 +45,55 @@ struct MabitWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+        ZStack {
+            LinearGradient(
+                colors: [Color.mabeBlue, Color.mabeBlue.opacity(0.8)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .scaledToFill()
 
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+
+            VStack(alignment: .leading, spacing: 10) {
+                
+                HStack {
+                    Text("mabit")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "sparkles")
+                        .foregroundColor(.white.opacity(0.8))
+                }
+
+                Text("¿Tienes dudas?")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+
+                Text("Pregunta sobre beneficios, cultura o oportunidades")
+                    .font(.caption)
+                    .foregroundColor(.white.opacity(0.85))
+
+                Spacer()
+
+                HStack {
+                    Image(systemName: "message.fill")
+                    Text("Abrir chat")
+                }
+                .font(.caption)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
+                .background(Color.white.opacity(0.2))
+                .clipShape(Capsule())
+                .foregroundColor(.white)
+            }
+            .padding()
+    
         }
     }
 }
-
 struct MabitWidget: Widget {
     let kind: String = "MabitWidget"
 
@@ -62,6 +101,8 @@ struct MabitWidget: Widget {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
             MabitWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
+                .widgetURL(URL(string: "mabit://chat"))
+
         }
     }
 }

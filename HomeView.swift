@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import AVKit
+
 
 struct HomeView: View {
+    
+    @Binding var goToChat: Bool
+
     var body: some View {
         ZStack(alignment: .bottom) {
+            
+            
             ScrollView {
                 VStack(spacing: 30) {
                     AnimatedImageCard(imageName: "cultura",
@@ -30,7 +37,6 @@ struct HomeView: View {
                     ProgramCard(title: "Compra de Productos",
                                 description: "Electrodomésticos Mabe con descuentos exclusivos.")
                     
-                    // FOTOS CON ICONO DE PLAY (simulan videos)
                     FakeVideoCard(imageName: "testimonio1",
                                   title: "María - Ingeniera de Producto",
                                   description: "Crecí profesionalmente y aporto a proyectos innovadores.")
@@ -59,6 +65,7 @@ struct HomeView: View {
                 }
             }
 
+            // BOTÓN
             NavigationLink {
                 ChatView()
             } label: {
@@ -76,6 +83,13 @@ struct HomeView: View {
                 .shadow(color: Color.mabeBlue.opacity(0.28), radius: 14, x: 0, y: 10)
             }
             .padding(.bottom, 24)
+        }
+
+        .navigationDestination(isPresented: $goToChat) {
+            ChatView()
+        }
+        .onDisappear {
+            goToChat = false
         }
     }
 }
@@ -155,7 +169,7 @@ struct FakeVideoCard: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
-                    .foregroundColor(.mabeBlue)
+                    .foregroundColor(.white)
                     .shadow(radius: 5)
             }
             
@@ -170,8 +184,11 @@ struct FakeVideoCard: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        HomeView()
-    }
-}
+/*
+ #Preview {
+ NavigationStack {
+ HomeView()
+ }
+ }
+ 
+ */

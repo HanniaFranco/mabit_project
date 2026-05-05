@@ -12,6 +12,12 @@
 		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
 		FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB572FAA10E80090BA2C /* HomeView.swift */; };
 		FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */; };
+		FBEBA7732FAA654B009407C9 /* NPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76F2FAA654B009407C9 /* NPSView.swift */; };
+		FBEBA7742FAA654B009407C9 /* WordCloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA7712FAA654B009407C9 /* WordCloudView.swift */; };
+		FBEBA7752FAA654B009407C9 /* EfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */; };
+		FBEBA7762FAA654B009407C9 /* SatisfactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */; };
+		FBEBA7772FAA654B009407C9 /* BottlenecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */; };
+		FBEBA7782FAA654B009407C9 /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBA76D2FAA654B009407C9 /* CheckInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		FB8EBB422FAA032C0090BA2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FB8EBB572FAA10E80090BA2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = politicas_generales.pdf; sourceTree = "<group>"; };
+		FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlenecksView.swift; sourceTree = "<group>"; };
+		FBEBA76D2FAA654B009407C9 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EfficiencyView.swift; sourceTree = "<group>"; };
+		FBEBA76F2FAA654B009407C9 /* NPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSView.swift; sourceTree = "<group>"; };
+		FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfactionView.swift; sourceTree = "<group>"; };
+		FBEBA7712FAA654B009407C9 /* WordCloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -115,6 +127,7 @@
 				FBC9A95E2FAA503F00D1523E /* Core */,
 				FBC9A9682FAA504900D1523E /* Models */,
 				FBC9A94F2FAA502400D1523E /* politicas_generales.pdf */,
+				FBEBA7722FAA654B009407C9 /* vistas_BI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +139,19 @@
 				FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBEBA7722FAA654B009407C9 /* vistas_BI */ = {
+			isa = PBXGroup;
+			children = (
+				FBEBA76C2FAA654B009407C9 /* BottlenecksView.swift */,
+				FBEBA76D2FAA654B009407C9 /* CheckInView.swift */,
+				FBEBA76E2FAA654B009407C9 /* EfficiencyView.swift */,
+				FBEBA76F2FAA654B009407C9 /* NPSView.swift */,
+				FBEBA7702FAA654B009407C9 /* SatisfactionView.swift */,
+				FBEBA7712FAA654B009407C9 /* WordCloudView.swift */,
+			);
+			path = vistas_BI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +304,12 @@
 			files = (
 				FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */,
 				FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */,
+				FBEBA7732FAA654B009407C9 /* NPSView.swift in Sources */,
+				FBEBA7742FAA654B009407C9 /* WordCloudView.swift in Sources */,
+				FBEBA7752FAA654B009407C9 /* EfficiencyView.swift in Sources */,
+				FBEBA7762FAA654B009407C9 /* SatisfactionView.swift in Sources */,
+				FBEBA7772FAA654B009407C9 /* BottlenecksView.swift in Sources */,
+				FBEBA7782FAA654B009407C9 /* CheckInView.swift in Sources */,
 				FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */,
 				FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */,
 			);

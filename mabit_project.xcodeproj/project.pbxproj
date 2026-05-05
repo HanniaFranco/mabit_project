@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB3E2FA9CDB50090BA2C /* SplashView.swift */; };
+		FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */; };
+		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
+		FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB572FAA10E80090BA2C /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB8EBB222FA9CCF60090BA2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB8EBB0A2FA9CCF40090BA2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB8EBB112FA9CCF40090BA2C;
+			remoteInfo = mabit_project;
+		};
+		FB8EBB2C2FA9CCF60090BA2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB8EBB0A2FA9CCF40090BA2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB8EBB112FA9CCF40090BA2C;
+			remoteInfo = mabit_project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB8EBB122FA9CCF40090BA2C /* mabit_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mabit_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8EBB3E2FA9CDB50090BA2C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FB8EBB422FAA032C0090BA2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB8EBB572FAA10E80090BA2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FB8EBB142FA9CCF40090BA2C /* mabit_project */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mabit_project;
+			sourceTree = "<group>";
+		};
+		FB8EBB242FA9CCF60090BA2C /* mabit_projectTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mabit_projectTests;
+			sourceTree = "<group>";
+		};
+		FB8EBB2E2FA9CCF60090BA2C /* mabit_projectUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mabit_projectUITests;
+			sourceTree = "<group>";
+		};
+		FB8EBB442FAA08E00090BA2C /* Fonts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB8EBB0F2FA9CCF40090BA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB1E2FA9CCF60090BA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB282FA9CCF60090BA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB8EBB092FA9CCF40090BA2C = {
+			isa = PBXGroup;
+			children = (
+				FB8EBB442FAA08E00090BA2C /* Fonts */,
+				FB8EBB572FAA10E80090BA2C /* HomeView.swift */,
+				FB8EBB422FAA032C0090BA2C /* LoginView.swift */,
+				FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */,
+				FB8EBB3E2FA9CDB50090BA2C /* SplashView.swift */,
+				FB8EBB142FA9CCF40090BA2C /* mabit_project */,
+				FB8EBB242FA9CCF60090BA2C /* mabit_projectTests */,
+				FB8EBB2E2FA9CCF60090BA2C /* mabit_projectUITests */,
+				FB8EBB132FA9CCF40090BA2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB8EBB132FA9CCF40090BA2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB8EBB122FA9CCF40090BA2C /* mabit_project.app */,
+				FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */,
+				FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB8EBB112FA9CCF40090BA2C /* mabit_project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8EBB352FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_project" */;
+			buildPhases = (
+				FB8EBB0E2FA9CCF40090BA2C /* Sources */,
+				FB8EBB0F2FA9CCF40090BA2C /* Frameworks */,
+				FB8EBB102FA9CCF40090BA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FB8EBB142FA9CCF40090BA2C /* mabit_project */,
+				FB8EBB442FAA08E00090BA2C /* Fonts */,
+			);
+			name = mabit_project;
+			packageProductDependencies = (
+			);
+			productName = mabit_project;
+			productReference = FB8EBB122FA9CCF40090BA2C /* mabit_project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB8EBB202FA9CCF60090BA2C /* mabit_projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8EBB382FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_projectTests" */;
+			buildPhases = (
+				FB8EBB1D2FA9CCF60090BA2C /* Sources */,
+				FB8EBB1E2FA9CCF60090BA2C /* Frameworks */,
+				FB8EBB1F2FA9CCF60090BA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB8EBB232FA9CCF60090BA2C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FB8EBB242FA9CCF60090BA2C /* mabit_projectTests */,
+			);
+			name = mabit_projectTests;
+			packageProductDependencies = (
+			);
+			productName = mabit_projectTests;
+			productReference = FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB8EBB2A2FA9CCF60090BA2C /* mabit_projectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8EBB3B2FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_projectUITests" */;
+			buildPhases = (
+				FB8EBB272FA9CCF60090BA2C /* Sources */,
+				FB8EBB282FA9CCF60090BA2C /* Frameworks */,
+				FB8EBB292FA9CCF60090BA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB8EBB2D2FA9CCF60090BA2C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FB8EBB2E2FA9CCF60090BA2C /* mabit_projectUITests */,
+			);
+			name = mabit_projectUITests;
+			packageProductDependencies = (
+			);
+			productName = mabit_projectUITests;
+			productReference = FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB8EBB0A2FA9CCF40090BA2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					FB8EBB112FA9CCF40090BA2C = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					FB8EBB202FA9CCF60090BA2C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = FB8EBB112FA9CCF40090BA2C;
+					};
+					FB8EBB2A2FA9CCF60090BA2C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = FB8EBB112FA9CCF40090BA2C;
+					};
+				};
+			};
+			buildConfigurationList = FB8EBB0D2FA9CCF40090BA2C /* Build configuration list for PBXProject "mabit_project" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB8EBB092FA9CCF40090BA2C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FB8EBB132FA9CCF40090BA2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB8EBB112FA9CCF40090BA2C /* mabit_project */,
+				FB8EBB202FA9CCF60090BA2C /* mabit_projectTests */,
+				FB8EBB2A2FA9CCF60090BA2C /* mabit_projectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB8EBB102FA9CCF40090BA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB1F2FA9CCF60090BA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB292FA9CCF60090BA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB8EBB0E2FA9CCF40090BA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */,
+				FB8EBB582FAA10E80090BA2C /* HomeView.swift in Sources */,
+				FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */,
+				FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB1D2FA9CCF60090BA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8EBB272FA9CCF60090BA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB8EBB232FA9CCF60090BA2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB8EBB112FA9CCF40090BA2C /* mabit_project */;
+			targetProxy = FB8EBB222FA9CCF60090BA2C /* PBXContainerItemProxy */;
+		};
+		FB8EBB2D2FA9CCF60090BA2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB8EBB112FA9CCF40090BA2C /* mabit_project */;
+			targetProxy = FB8EBB2C2FA9CCF60090BA2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB8EBB332FA9CCF60090BA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB8EBB342FA9CCF60090BA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB8EBB362FA9CCF60090BA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mabit-project-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB8EBB372FA9CCF60090BA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mabit-project-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB8EBB392FA9CCF60090BA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mabit_project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mabit_project";
+			};
+			name = Debug;
+		};
+		FB8EBB3A2FA9CCF60090BA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mabit_project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mabit_project";
+			};
+			name = Release;
+		};
+		FB8EBB3C2FA9CCF60090BA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mabit_project;
+			};
+			name = Debug;
+		};
+		FB8EBB3D2FA9CCF60090BA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mabit_project;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB8EBB0D2FA9CCF40090BA2C /* Build configuration list for PBXProject "mabit_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8EBB332FA9CCF60090BA2C /* Debug */,
+				FB8EBB342FA9CCF60090BA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8EBB352FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8EBB362FA9CCF60090BA2C /* Debug */,
+				FB8EBB372FA9CCF60090BA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8EBB382FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8EBB392FA9CCF60090BA2C /* Debug */,
+				FB8EBB3A2FA9CCF60090BA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8EBB3B2FA9CCF60090BA2C /* Build configuration list for PBXNativeTarget "mabit_projectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8EBB3C2FA9CCF60090BA2C /* Debug */,
+				FB8EBB3D2FA9CCF60090BA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB8EBB0A2FA9CCF40090BA2C /* Project object */;
+}

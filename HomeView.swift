@@ -56,7 +56,8 @@ struct HomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
+                    NavigationLink {
+                        UserRequestsView()
                     } label: {
                         Image(systemName: "person.crop.circle")
                             .font(.title3)

@@ -66,7 +66,7 @@ struct NPSView: View {
 
                         Text("\(Int(rating))")
                             .font(.system(size: numberSize, weight: .bold, design: .rounded))
-                            .foregroundColor(.mablue)
+                            .foregroundColor(.mabeBlue)
                             .contentTransition(.numericText())
                             .animation(.spring(), value: rating)
                             .accessibilityHidden(true)
@@ -75,7 +75,7 @@ struct NPSView: View {
                     .accessibilityElement(children: .combine)
 
                     Slider(value: $rating, in: 0...5, step: 1)
-                        .tint(.mablue)
+                        .tint(.mabeBlue)
                         .padding(.horizontal, 16)
                         .accessibilityLabel("Calificación de experiencia")
                         .accessibilityValue("\(Int(rating)) de 5, \(emojiDescription(for: Int(rating)))")
@@ -102,7 +102,7 @@ struct NPSView: View {
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(.mablue)
+                        .background(.mabeBlue)
                         .foregroundColor(.white)
                         .cornerRadius(16)
                 }

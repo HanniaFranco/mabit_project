@@ -1,4 +1,7 @@
+import Combine
 import SwiftUI
+import LocalAuthentication
+
 
 struct ChatView: View {
     private static let initialGreeting = "Hola, soy mabit. Preguntame sobre vacaciones, nomina, beneficios o politicas de RRHH."
@@ -37,6 +40,9 @@ struct ChatView: View {
     @State private var humanSupportFollowUpTask: Task<Void, Never>?
     @FocusState private var isInputFocused: Bool
     @FocusState private var isSupportEditorFocused: Bool
+
+    private let secureSessionDuration: TimeInterval = 300
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
         VStack(spacing: 0) {
@@ -513,9 +519,7 @@ struct ChatView: View {
                 source: response.shouldEscalate ? nil : response.source,
                 intent: response.intent,
                 authLevel: response.authLevel,
-                reason: response.reason,
-                answerSource: response.shouldEscalate ? nil : response.answerSource,
-                trace: response.shouldEscalate ? nil : response.trace
+                reason: response.reason
             )
             messages.append(responseMessage)
 
@@ -526,7 +530,7 @@ struct ChatView: View {
                 startHumanSupportFlow()
             }
 
-            if response.requiresBiometricVerification {
+            if shouldPromptBiometricVerification(for: response) {
                 isAwaitingContinuationResponse = false
                 pendingProtectedQuestion = question
                 showBiometricPrompt = true
@@ -614,8 +618,7 @@ struct ChatView: View {
             Message(
                 text: "Identidad verificada. Ya puedes hacer consultas privadas durante 5 minutos.",
                 isUser: false,
-                source: "Sesion segura",
-                answerSource: .fallback
+                source: "Sesion segura"
             )
         )
 
@@ -678,8 +681,7 @@ struct ChatView: View {
                 Message(
                     text: "La sesion privada expiro. Si vuelves a pedir informacion sensible, te pedire verificar tu identidad otra vez.",
                     isUser: false,
-                    source: "Sesion segura",
-                    answerSource: .fallback
+                    source: "Sesion segura"
                 )
             )
         }
@@ -780,6 +782,10 @@ struct ChatView: View {
         ]
 
         return exactMatches.contains(normalized)
+    }
+
+    private func shouldPromptBiometricVerification(for response: ChatResponse) -> Bool {
+        response.authLevel == .biometricRequired && response.source == "Control de acceso"
     }
 }
 

@@ -14,6 +14,7 @@
 		FB4AA37E2FAAB11F000E90DE /* EfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AA3752FAAB11F000E90DE /* EfficiencyView.swift */; };
 		FB4AA37F2FAAB11F000E90DE /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AA3742FAAB11F000E90DE /* CheckInView.swift */; };
 		FB4B75352FAA8B1100239374 /* mabito.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB4B75342FAA8B1100239374 /* mabito.mp4 */; };
+		FB4B77202FAAB57400239374 /* api_response.json in Resources */ = {isa = PBXBuildFile; fileRef = FB4B771F2FAAB57400239374 /* api_response.json */; };
 		FB8EBB3F2FA9CDB50090BA2C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB3E2FA9CDB50090BA2C /* SplashView.swift */; };
 		FB8EBB412FAA021D0090BA2C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB402FAA021D0090BA2C /* WelcomeView.swift */; };
 		FB8EBB432FAA032C0090BA2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EBB422FAA032C0090BA2C /* LoginView.swift */; };
@@ -72,6 +73,7 @@
 		FB4AA3772FAAB11F000E90DE /* SatisfactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfactionView.swift; sourceTree = "<group>"; };
 		FB4AA3782FAAB11F000E90DE /* WordCloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudView.swift; sourceTree = "<group>"; };
 		FB4B75342FAA8B1100239374 /* mabito.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mabito.mp4; sourceTree = "<group>"; };
+		FB4B771F2FAAB57400239374 /* api_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = api_response.json; sourceTree = "<group>"; };
 		FB8EBB122FA9CCF40090BA2C /* mabit_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mabit_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8EBB212FA9CCF60090BA2C /* mabit_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8EBB2B2FA9CCF60090BA2C /* mabit_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mabit_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,17 +89,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FB549E1A2FAAB5630023D538 /* Exceptions for "MabitWidget" folder in "mabit_project" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				api_response.json,
-			);
-			target = FB8EBB112FA9CCF40090BA2C /* mabit_project */;
-		};
 		FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				api_response.json,
 				Info.plist,
 			);
 			target = FBCA68DF2FAA610C00EBE35E /* MabitWidgetExtension */;
@@ -138,7 +132,6 @@
 		FBCA68E62FAA610C00EBE35E /* MabitWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FB549E1A2FAAB5630023D538 /* Exceptions for "MabitWidget" folder in "mabit_project" target */,
 				FBCA68FA2FAA610E00EBE35E /* Exceptions for "MabitWidget" folder in "MabitWidgetExtension" target */,
 			);
 			path = MabitWidget;
@@ -196,6 +189,7 @@
 		FB8EBB092FA9CCF40090BA2C = {
 			isa = PBXGroup;
 			children = (
+				FB4B771F2FAAB57400239374 /* api_response.json */,
 				FBCA68FC2FAA653700EBE35E /* AppColors.swift */,
 				FB8EBB442FAA08E00090BA2C /* Fonts */,
 				FB8EBB572FAA10E80090BA2C /* HomeView.swift */,
@@ -388,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4B75352FAA8B1100239374 /* mabito.mp4 in Resources */,
+				FB4B77202FAAB57400239374 /* api_response.json in Resources */,
 				FBC9A9502FAA502400D1523E /* politicas_generales.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,7 +598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";
@@ -618,7 +613,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -637,7 +632,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mabit-project-Info.plist";
@@ -652,7 +647,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -674,7 +669,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-projectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -696,7 +691,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-projectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -716,7 +711,7 @@
 				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-projectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -736,7 +731,7 @@
 				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-projectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-projectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -755,7 +750,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MabitWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MabitWidget;
@@ -766,7 +761,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project.MabitWidgetExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-project.MabitWidgetExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -785,7 +780,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H878Y3WH2R;
+				DEVELOPMENT_TEAM = FXG8GL7LDQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MabitWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MabitWidget;
@@ -796,7 +791,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Leon.mabit-project.MabitWidgetExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "mabit-project.MabitWidgetExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

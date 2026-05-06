@@ -70,7 +70,10 @@ struct HomeView: View {
             NavigationLink {
                 ChatView()
             } label: {
+                MabitoVideoView()
+                
                 HStack(spacing: 10) {
+                    
                     Image(systemName: "sparkles.message.fill")
                         .font(.headline)
                     Text("Hazme una pregunta!")
@@ -185,11 +188,15 @@ struct FakeVideoCard: View {
     }
 }
 
-/*
+
+
+ 
  #Preview {
  NavigationStack {
- HomeView()
+     HomeView(goToChat: .constant(false))
  }
  }
  
- */
+ 
+ 
+ 

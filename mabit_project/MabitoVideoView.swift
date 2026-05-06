@@ -28,7 +28,7 @@ struct MabitoVideoView: View {
                     setupVideo()
                 }
         }
-        // Animación flotante 👇
+        // Animación
         .offset(y: animate ? -75 : -65)
         .animation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true), value: animate)
         .onAppear {
